@@ -58,7 +58,7 @@ footer {
 }
 
 /* ===== LAYOUT STYLES ===== */
-#expertise, #biography, #contact, header, footer {
+#expertise, #biography, #contact-info, header, footer {
   padding: 1.222em 0.916em;
 }
 
@@ -66,12 +66,12 @@ footer {
   padding-top: 20rem;
 }
 
-#expertise h2, #contact p {
+#expertise h2, #contact-info p {
   background: no-repeat url(../images/line-white.png);
 }
 
 #biography h2 {
-  background: no-repeat url(../images/line-black.png);
+  background: no-repeat url(../images/line-white.png);
 }
 
 #social {
@@ -95,10 +95,11 @@ footer {
 }
 
 #biography {
-  background-color: #FFF;
+  color: white;
+  background-color: #000;
 }
 
-#contact{
+#contact-info{
   background-color: #000;
   color: #FFF;
 }
@@ -126,6 +127,10 @@ footer {
   text-transform: uppercase;
 }
 
+nav a {
+  color: #000;
+}
+
 #logo-main img {
   height: 4em;
   width: 6.5em;
@@ -136,7 +141,7 @@ footer {
   line-height: 1.222em;
 }
 
-#subtitle li, h2, .summary, #contact-text {
+#subtitle li, h2, .summary, #contact-info-text {
   font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -183,7 +188,7 @@ footer {
   padding-bottom: 1.22em;
 }
 
-#contact-text {
+#contact-info-text {
   padding: 2.10937em 0 1.2em 0;
   font-size: 1.5275em;
   margin-bottom: 4.8em;
@@ -213,7 +218,7 @@ footer figure:last-child img {
 /* ===== MEDIA QUERIES ===== */
 @media screen and (min-width: 31.250em) {
 
-  #expertise, #biography, #contact, header, footer {
+  #expertise, #biography, #contact-info, header, footer {
     padding: 2.44em 2.748em;
   }
 
