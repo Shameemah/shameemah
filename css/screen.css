@@ -111,7 +111,7 @@ footer {
 
 #resume {
   border:1px solid #FFF;
-  margin-bottom: 4.28em;
+  margin-bottom: 1.8em;
   width: 40vw;
   text-align: center;
   padding: 0.8em;
@@ -254,7 +254,7 @@ footer figure:last-child img {
     font-size: 4.640375em;
   }
 
-  #biography, #expertise-info-main {
+  #biography, #expertise-main {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 33.3% 33.3% 33.3%;
