@@ -58,7 +58,7 @@ footer {
 }
 
 /* ===== LAYOUT STYLES ===== */
-#expertise, #biography, #contact-info, header, footer {
+#expertise-info, #biography, #contact-info, header, footer {
   padding: 1.222em 0.916em;
 }
 
@@ -66,7 +66,7 @@ footer {
   padding-top: 20rem;
 }
 
-#expertise h2, #contact-info p {
+#expertise-info h2, #contact-info p {
   background: no-repeat url(../images/line-white.png);
 }
 
@@ -89,7 +89,7 @@ footer {
   display: none;
 }
 
-#expertise {
+#expertise-info {
   color: white;
   background-color: #000;
 }
@@ -218,7 +218,7 @@ footer figure:last-child img {
 /* ===== MEDIA QUERIES ===== */
 @media screen and (min-width: 31.250em) {
 
-  #expertise, #biography, #contact-info, header, footer {
+  #expertise-info, #biography, #contact-info, header, footer {
     padding: 2.44em 2.748em;
   }
 
@@ -254,7 +254,7 @@ footer figure:last-child img {
     font-size: 4.640375em;
   }
 
-  #biography, #expertise-main {
+  #biography, #expertise-info-main {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 33.3% 33.3% 33.3%;
@@ -308,7 +308,7 @@ footer figure:last-child img {
     grid-column-end: 4;
   }
 
-  #expertise, #biography, #contact-info, header, footer {
+  #expertise-info, #biography, #contact-info, header, footer {
     padding-right: 5.496em;
   }
 
