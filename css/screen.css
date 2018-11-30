@@ -79,6 +79,16 @@ footer {
   background-size: 100vw;
 }
 
+#descr-header {
+  background: url(../images/background-photo-dark.jpg) #FFF;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+
 /* ===== MODULAR STYLES ===== */
 .summary {
   font-size: 1.06em;
