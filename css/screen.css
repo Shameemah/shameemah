@@ -249,6 +249,10 @@ nav a {
     font-size: 1.5em;
 }
 
+.show {
+  display: block;
+}
+
 
 /* ===== MEDIA QUERIES ===== */
 @media screen and (min-width: 31.250em) {
