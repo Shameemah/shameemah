@@ -57,6 +57,34 @@ footer {
   font-weight: 300;
 }
 
+footer p {
+  display: inline;
+  padding-right: 0.8em;
+}
+
+footer figure {
+  display: inline;
+}
+
+footer figure img {
+  height: 1.5em;
+  width: 1.5em;
+  padding-right: 2em;
+  padding-top: 1.222em;
+}
+
+footer figure:last-child img {
+  height: 2em;
+  width: 3em;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.984375em;
+}
+
 /* ===== LAYOUT STYLES ===== */
 #expertise-info, #biography, #contact-info, header, footer {
   padding: 1.222em 0.916em;
@@ -137,13 +165,9 @@ footer {
   text-transform: uppercase;
 }
 
-nav a {
-  color: #000;
-}
-
 #logo-main img {
-  height: 4em;
-  width: 6.5em;
+  height: 3.2em;
+  width: 5.5em;
 }
 
 #subtitle li, h2 {
@@ -204,26 +228,22 @@ nav a {
   margin-bottom: 4.8em;
 }
 
-footer p {
-  display: inline;
-  padding-right: 0.8em;
+#main-header {
+  background: rgba(255, 255, 255, 0.7);
 }
 
-footer figure {
-  display: inline;
+.main-nav li {
+    text-align: center;
+    margin: 0.98em auto;
 }
 
-footer figure img {
-  height: 1.5em;
-  width: 1.5em;
-  padding-right: 2em;
-  padding-top: 1.222em;
+.nav-tog {
+    position: absolute;
+    right: 0.916em;
+    cursor: pointer;
+    font-size: 24px;
 }
 
-footer figure:last-child img {
-  height: 2em;
-  width: 3em;
-}
 
 /* ===== MEDIA QUERIES ===== */
 @media screen and (min-width: 31.250em) {
