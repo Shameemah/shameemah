@@ -16,16 +16,6 @@ q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-s
 /* stylelint-enable */
 
 /* ===== BASE STYLES ===== */
-header {
-  background: url(../images/background-photo.jpeg) #FFF;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
-
 footer {
   background-color: #000;
   color: #FFF;
@@ -92,6 +82,16 @@ nav a {
 }
 
 /* ===== LAYOUT STYLES ===== */
+#main-header {
+  background: url(../images/background-photo.jpeg) #FFF;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 #expertise-info, #biography, #contact-info, header, footer {
   padding: 1.222em 0.916em;
 }
@@ -120,7 +120,7 @@ nav a {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 40vh;
+  
 }
 
 /* ===== MODULAR STYLES ===== */
@@ -207,7 +207,7 @@ nav a {
 }
 
 #logo-container figure img {
-  height: 4em;
+  height: 4.2em;
   width: 5em;
   display: block;
   padding: 1.222em 0;
