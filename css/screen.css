@@ -78,6 +78,12 @@ footer figure:last-child img {
   width: 3em;
 }
 
+nav {
+  background: rgba(255, 255, 255, 0.5);
+  margin: -1.222em -0.916em;
+  padding: 1.222em 0.916em;
+}
+
 nav a {
   color: #000;
   text-decoration: none;
@@ -118,15 +124,6 @@ nav a {
 }
 
 /* ===== MODULAR STYLES ===== */
-.summary {
-  font-size: 1.06em;
-  padding-bottom: 1.8em;
-}
-
-.header-hidden {
-  display: none;
-}
-
 #expertise-info {
   color: white;
   background-color: #000;
@@ -228,8 +225,13 @@ nav a {
   margin-bottom: 4.8em;
 }
 
-#main-header {
-  background: rgba(255, 255, 255, 0.7);
+.summary {
+  font-size: 1.06em;
+  padding-bottom: 1.8em;
+}
+
+.header-hidden {
+  display: none;
 }
 
 .main-nav {
@@ -239,7 +241,7 @@ nav a {
 
 .main-nav li {
     text-align: center;
-    margin: 0.98em auto;
+    margin: 1.22em auto;
 }
 
 .nav-tog {
