@@ -35,7 +35,7 @@ h4 {
 
 h5 {
   font-weight: 600;
-  padding: 0.203666em;
+  padding-top: 0.611em;
 }
 
 main {
@@ -306,6 +306,10 @@ h2,
 #skills li::before {
   content: "-";
   padding-right: 0.2em;
+}
+
+#skills li:first-child {
+  padding-top: 0.611em;
 }
 
 .summary {
