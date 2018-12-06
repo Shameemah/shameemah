@@ -30,10 +30,30 @@
     <main id="content">
       <section id="contact-info">
         <h3 class="header-hidden">Contact</h3>
-        <p id="contact-text">
-          To get in touch, write to
-          <a href="mailto:shameemah.fcodjoe@gmail.com">shameemah@gmail.com</a>
-        </p>
+        <h2>Connect with me!</h2>
+        <form name ="login-form" id="login-form" method="get" action="#null">
+          <ol>
+            <li id="input-name">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required/>
+            </li>
+            <li id="input-email">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required/>
+            </li>
+            <li id="input-subject">
+              <label for="subject">Subject</label>
+              <input type="text" name="subject" id="subject" required/>
+            </li>
+            <li id="input-message">
+              <label for="message">Message</label>
+              <textarea type="text" name="message" id="message" required></textarea>
+            </li>
+            <li id="input-send">
+              <input type="submit" name="submit" id="submit" value="Send Message"/>
+            </li>
+          </ol>
+        </form>
       </section>
     </main>
     <footer>
