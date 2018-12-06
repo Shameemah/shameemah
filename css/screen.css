@@ -47,6 +47,12 @@ footer {
   font-weight: 300;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #000;
+}
+
 footer p {
   display: inline;
   padding-right: 0.8em;
@@ -100,7 +106,7 @@ nav a {
   padding-top: 20rem;
 }
 
-#expertise-info h2, #contact-info p {
+#expertise-info h2, #contact-info h2 {
   background: no-repeat url(../images/line-white.png);
 }
 
@@ -123,6 +129,10 @@ nav a {
 }
 
 /* ===== MODULAR STYLES ===== */
+#content {
+  min-height: inherit;
+}
+
 #expertise-info {
   color: white;
   background-color: #000;
@@ -171,7 +181,7 @@ nav a {
   line-height: 1.222em;
 }
 
-#subtitle li, h2, .summary, #contact-info-text {
+#subtitle li, h2, .summary, #contact-text {
   font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -218,10 +228,10 @@ nav a {
   padding-bottom: 1.22em;
 }
 
-#contact-info-text {
+#contact-text {
   padding: 2.10937em 0 1.2em 0;
   font-size: 1.5275em;
-  margin-bottom: 4.8em;
+  line-height: 1.4em;
 }
 
 .summary {
@@ -303,6 +313,16 @@ nav a {
 
 @media screen and (min-width: 48em) {
 
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 1.525em;
+  }
+
   #subtitle {
     padding-top: 24rem;
   }
@@ -326,13 +346,6 @@ nav a {
     grid-column-gap: 2.5em;
   }
 
-  .summary {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
   #resume {
     width: 30vw;
     grid-column-start: 2;
@@ -352,7 +365,7 @@ nav a {
 
   #logo-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 4;
     grid-template-rows: 50% 50%;
   }
 
@@ -376,6 +389,37 @@ nav a {
   #expertise-info, #biography, #contact-info, .main-header, footer {
     padding-right: 5.496em;
   }
+
+  .summary {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .main-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+
+  .main-nav li {
+      margin: 0;
+  }
+
+  .nav-lin {
+      margin-left: 3.664em;
+  }
+
+  .nav-tog {
+     display: none;
+  }
+
+  .nav-lin:hover {
+      color: rgba(255, 255, 255, 1);
+  }
+
+}
 
   @media screen and (min-width: 75em) {
     footer p {
