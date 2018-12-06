@@ -27,6 +27,17 @@ h2 {
   text-transform: uppercase;
 }
 
+h4 {
+  font-size: 1.3em;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+}
+
+h5 {
+  font-weight: 600;
+  padding: 0.203666em;
+}
+
 main {
   font-weight: 300;
   font-size: 0.984375em;
@@ -91,7 +102,8 @@ textarea {
   height: 20vh;
 }
 
-input, textarea {
+input,
+textarea {
 	box-sizing: border-box;
 	font-family: inherit;
 	font-size: inherit;
@@ -99,7 +111,8 @@ input, textarea {
 	width: 100%;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   background-color: #000;
@@ -150,7 +163,11 @@ nav a {
   height: 100vh;
 }
 
-#expertise-info, #biography, #contact-info, header, footer {
+#expertise-info,
+#biography,
+#contact-info,
+header,
+footer {
   padding: 1.222em 0.916em;
 }
 
@@ -158,7 +175,8 @@ nav a {
   padding-top: 20rem;
 }
 
-#expertise-info h2, #contact-info h2 {
+#expertise-info h2,
+#contact-info h2 {
   background: no-repeat url(../images/line-white.png);
 }
 
@@ -224,12 +242,16 @@ nav a {
   width: 5.5em;
 }
 
-#subtitle li, h2 {
+#subtitle li,
+h2 {
   font-weight: 600;
   line-height: 1.222em;
 }
 
-#subtitle li, h2, .summary, #contact-text {
+#subtitle li,
+h2,
+.summary,
+#contact-text {
   font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -320,6 +342,16 @@ nav a {
     margin-bottom: -0.1525em;
 }
 
+.education li::before,
+.work-experience li::before {
+  content: "-";
+}
+
+.work-experience,
+.skillset {
+  padding-top: 1.222em;
+}
+
 /* ===== MEDIA QUERIES ===== */
 @media screen and (min-width: 31.250em) {
   nav {
@@ -336,7 +368,11 @@ nav a {
     width: 40vw;
   }
 
-  #expertise-info, #biography, #contact-info, header, footer {
+  #expertise-info,
+  #biography,
+  #contact-info,
+  header,
+  footer {
     padding: 2.44em 2.748em;
   }
 
@@ -386,7 +422,9 @@ nav a {
     font-size: 4.640375em;
   }
 
-  #biography, #expertise-main, #contact-info {
+  #biography,
+  #expertise-main,
+  #contact-info {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 33.3% 33.3% 33.3%;
@@ -403,7 +441,9 @@ nav a {
     margin-top: 1.222em;
   }
 
-  #bio-content, #resume-content, #contact-form {
+  #bio-content,
+  #resume-content,
+  #contact-form {
     grid-row-start: 2;
     grid-row-end: 4;
     grid-column-start: 2;
@@ -433,7 +473,11 @@ nav a {
     grid-column-end: 4;
   }
 
-  #expertise-info, #biography, #contact-info, .main-header, footer {
+  #expertise-info,
+  #biography,
+  #contact-info,
+  .main-header,
+  footer {
     padding-right: 5.496em;
   }
 
