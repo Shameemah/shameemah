@@ -44,11 +44,6 @@ main {
   line-height: 1.444em;
 }
 
-main,
-footer {
-  font-family: 'Open Sans', sans-serif;
-}
-
 a {
   color: #FFF;
 }
@@ -65,8 +60,74 @@ form {
 	text-align: center;
 }
 
+label {
+	color: white;
+	display: block;
+	text-align: left;
+  padding-left: 1em;
+}
+
+textarea {
+  height: 20vh;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.5);
+  margin: -1.222em -0.916em;
+  padding: 1.222em 0.916em;
+}
+
+main,
+footer {
+  font-family: 'Open Sans', sans-serif;
+}
+
+input,
+textarea {
+	box-sizing: border-box;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #000;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.984375em;
+}
+
 form li {
 	margin-bottom: 1.222em;
+}
+
+footer p {
+  display: inline;
+  padding-right: 0.8em;
+}
+
+footer figure {
+  display: inline;
+}
+
+footer figure img {
+  height: 1.5em;
+  width: 1.5em;
+  padding-right: 2em;
+  padding-top: 1.222em;
+}
+
+footer figure:last-child img {
+  height: 2em;
+  width: 3em;
 }
 
 input[type="text"],
@@ -91,67 +152,6 @@ input[type="submit"]:hover {
 	color: #FFF;
 }
 
-label {
-	color: white;
-	display: block;
-	text-align: left;
-  padding-left: 1em;
-}
-
-textarea {
-  height: 20vh;
-}
-
-input,
-textarea {
-	box-sizing: border-box;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
-	width: 100%;
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  background-color: #000;
-}
-
-footer p {
-  display: inline;
-  padding-right: 0.8em;
-}
-
-footer figure {
-  display: inline;
-}
-
-footer figure img {
-  height: 1.5em;
-  width: 1.5em;
-  padding-right: 2em;
-  padding-top: 1.222em;
-}
-
-footer figure:last-child img {
-  height: 2em;
-  width: 3em;
-}
-
-nav {
-  background: rgba(255, 255, 255, 0.5);
-  margin: -1.222em -0.916em;
-  padding: 1.222em 0.916em;
-}
-
-nav a {
-  color: #000;
-  text-decoration: none;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 0.984375em;
-}
-
 /* ===== LAYOUT STYLES ===== */
 #main-header {
   background: url(../images/background-photo.jpeg) #FFF;
@@ -163,25 +163,8 @@ nav a {
   height: 100vh;
 }
 
-#expertise-info,
-#biography,
-#contact-info,
-header,
-footer {
-  padding: 1.222em 0.916em;
-}
-
 #subtitle {
   padding-top: 20rem;
-}
-
-#expertise-info h2,
-#contact-info h2 {
-  background: no-repeat url(../images/line-white.png);
-}
-
-#biography h2 {
-  background: no-repeat url(../images/line-white.png);
 }
 
 #social {
@@ -196,6 +179,23 @@ footer {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#expertise-info,
+#biography,
+#contact-info,
+header,
+footer {
+  padding: 1.222em 0.916em;
+}
+
+#expertise-info h2,
+#contact-info h2 {
+  background: no-repeat url(../images/line-white.png);
+}
+
+#biography h2 {
+  background: no-repeat url(../images/line-white.png);
 }
 
 /* ===== MODULAR STYLES ===== */
@@ -227,49 +227,10 @@ footer {
   padding: 0.8em;
 }
 
-#resume:hover {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-#resume a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-#logo-main img {
-  height: 3.2em;
-  width: 5.5em;
-}
-
-#subtitle li,
-h2 {
-  font-weight: 600;
-  line-height: 1.222em;
-}
-
-#subtitle li,
-h2,
-.summary,
 #contact-text {
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-#subtitle li:first-child {
-  font-size: 1.40625em;
-}
-
-#subtitle li:nth-child(2) {
-  font-size: 2.109375em;
-}
-
-#subtitle li:last-child {
-  font-size: 2.531em;
-}
-
-#skills li::before {
-  content: "-";
-  padding-right: 0.2em;
+  padding: 2.10937em 0 1.2em 0;
+  font-size: 1.5275em;
+  line-height: 1.4em;
 }
 
 #logo-container h3 {
@@ -298,10 +259,49 @@ h2,
   padding-bottom: 1.22em;
 }
 
+#resume a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#logo-main img {
+  height: 3.2em;
+  width: 5.5em;
+}
+
+#subtitle li,
+h2 {
+  font-weight: 600;
+  line-height: 1.222em;
+}
+
+#subtitle li,
+h2,
+.summary,
 #contact-text {
-  padding: 2.10937em 0 1.2em 0;
-  font-size: 1.5275em;
-  line-height: 1.4em;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#resume:hover {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#subtitle li:first-child {
+  font-size: 1.40625em;
+}
+
+#subtitle li:nth-child(2) {
+  font-size: 2.109375em;
+}
+
+#subtitle li:last-child {
+  font-size: 2.531em;
+}
+
+#skills li::before {
+  content: "-";
+  padding-right: 0.2em;
 }
 
 .summary {
@@ -318,11 +318,6 @@ h2,
     display: none;
 }
 
-.main-nav li {
-    text-align: center;
-    margin: 1.525em auto;
-}
-
 .nav-tog {
     position: absolute;
     right: 0.916em;
@@ -332,6 +327,16 @@ h2,
 
 .show {
   display: block;
+}
+
+.work-experience,
+.skillset {
+  padding-top: 1.222em;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 1.525em auto;
 }
 
 .main-nav li:first-child {
@@ -345,11 +350,6 @@ h2,
 .education li::before,
 .work-experience li::before {
   content: "-";
-}
-
-.work-experience,
-.skillset {
-  padding-top: 1.222em;
 }
 
 /* ===== MEDIA QUERIES ===== */
@@ -410,16 +410,25 @@ h2,
     padding-top: 24rem;
   }
 
-  #subtitle li:first-child {
-    font-size: 2.531em;
+  #resume {
+    width: 50vw;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+    margin-top: 1.222em;
   }
 
-  #subtitle li:nth-child(2) {
-    font-size: 3.374875em;
+  #logo-container {
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 50% 50%;
   }
 
-  #subtitle li:last-child {
-    font-size: 4.640375em;
+  #rbc-logo {
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
 
   #biography,
@@ -431,16 +440,6 @@ h2,
     grid-column-gap: 2.5em;
   }
 
-  #resume {
-    width: 30vw;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    text-align: center;
-    margin-top: 1.222em;
-  }
-
   #bio-content,
   #resume-content,
   #contact-form {
@@ -450,10 +449,12 @@ h2,
     grid-column-end: 3;
   }
 
-  #logo-container {
-    display: grid;
-    grid-template-columns: 4;
-    grid-template-rows: 50% 50%;
+  #expertise-info,
+  #biography,
+  #contact-info,
+  .main-header,
+  footer {
+    padding-right: 5.496em;
   }
 
   #logo-container h3 {
@@ -468,17 +469,16 @@ h2,
     grid-row-end: 3;
   }
 
-  #rbc-logo {
-    grid-column-start: 1;
-    grid-column-end: 4;
+  #subtitle li:first-child {
+    font-size: 2.531em;
   }
 
-  #expertise-info,
-  #biography,
-  #contact-info,
-  .main-header,
-  footer {
-    padding-right: 5.496em;
+  #subtitle li:nth-child(2) {
+    font-size: 3.374875em;
+  }
+
+  #subtitle li:last-child {
+    font-size: 4.640375em;
   }
 
   .summary {
@@ -494,16 +494,16 @@ h2,
       justify-content: flex-end;
   }
 
-  .main-nav li {
-      margin: 0;
-  }
-
   .nav-lin {
       margin-left: 3.664em;
   }
 
   .nav-tog {
      display: none;
+  }
+
+  .main-nav li {
+      margin: 0;
   }
 
   .nav-lin:hover {
