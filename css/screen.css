@@ -144,6 +144,10 @@ input[type="submit"] {
 	border: 0;
 	color: #FFF;
 	padding: 0.916em;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-background-size: none;
 }
 
 input[type="submit"]:hover {
