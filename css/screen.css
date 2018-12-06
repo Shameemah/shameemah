@@ -33,7 +33,8 @@ main {
   line-height: 1.444em;
 }
 
-main, footer {
+main,
+footer {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -45,6 +46,53 @@ footer {
   text-align: center;
   font-size: 0.76375em;
   font-weight: 300;
+}
+
+form {
+	background-color: rgba(255, 255, 255, 0.1);
+	padding-top: 1.222em;
+	text-align: center;
+}
+
+form li {
+	margin-bottom: 1.222em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	border: 0;
+	color: #000;
+	padding: 0.916em;
+  text-align: left;
+}
+
+input[type="submit"] {
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 0;
+	color: #FFF;
+	padding: 0.916em;
+}
+
+input[type="submit"]:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: none;
+	color: #FFF;
+}
+
+label {
+	color: white;
+	display: block;
+	text-align: left;
+  padding-left: 1em;
+}
+
+input, textarea {
+	box-sizing: border-box;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	width: 100%;
 }
 
 html, body {
@@ -129,10 +177,6 @@ nav a {
 }
 
 /* ===== MODULAR STYLES ===== */
-#content {
-  min-height: inherit;
-}
-
 #expertise-info {
   color: white;
   background-color: #000;
@@ -271,7 +315,6 @@ nav a {
 .main-nav li:last-child {
     margin-bottom: -0.1525em;
 }
-
 
 /* ===== MEDIA QUERIES ===== */
 @media screen and (min-width: 31.250em) {
