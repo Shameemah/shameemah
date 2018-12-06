@@ -120,7 +120,6 @@ nav a {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 
 /* ===== MODULAR STYLES ===== */
@@ -147,7 +146,7 @@ nav a {
 #resume {
   border:1px solid #FFF;
   margin-bottom: 1.8em;
-  width: 40vw;
+  width: 50vw;
   text-align: center;
   padding: 0.8em;
 }
@@ -241,7 +240,7 @@ nav a {
 
 .main-nav li {
     text-align: center;
-    margin: 1.22em auto;
+    margin: 1.525em auto;
 }
 
 .nav-tog {
@@ -255,9 +254,30 @@ nav a {
   display: block;
 }
 
+.main-nav li:first-child {
+    margin-top: -0.1525em;
+}
+
+.main-nav li:last-child {
+    margin-bottom: -0.1525em;
+}
+
 
 /* ===== MEDIA QUERIES ===== */
 @media screen and (min-width: 31.250em) {
+  nav {
+    background: rgba(255, 255, 255, 0.5);
+    margin: -2.44em -2.748em;
+    padding: 2.44em 2.748em;
+  }
+
+  nav a {
+    font-size: 1.22em;
+  }
+
+  #resume {
+    width: 40vw;
+  }
 
   #expertise-info, #biography, #contact-info, header, footer {
     padding: 2.44em 2.748em;
@@ -273,6 +293,10 @@ nav a {
 
   #subtitle li:last-child {
     font-size: 3.374875em;
+  }
+
+  .main-nav li {
+      margin: 2em auto;
   }
 
 }
@@ -349,7 +373,7 @@ nav a {
     grid-column-end: 4;
   }
 
-  #expertise-info, #biography, #contact-info, header, footer {
+  #expertise-info, #biography, #contact-info, .main-header, footer {
     padding-right: 5.496em;
   }
 
